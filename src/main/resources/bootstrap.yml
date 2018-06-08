@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: order_db
+  cloud:
+    config:
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:chunze1qaz2wsx@172.18.5.88:8761/eureka/,http://eureka:chunze1qaz2wsx@172.18.5.110:8761/eureka/
+  instance:    
+      prefer-ip-address: true
